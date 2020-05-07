@@ -1,0 +1,19 @@
+# what is it?
+    on demand virtual linux boxes 
+
+
+# installation
+    vagrantup.com + vbox
+
+vagrant installs boxes from vagrantcloud.com
+
+# version
+    vagrant -v 
+
+# using:
+    vagrant box add name
+    vagrant init name -> creates vagrantfile
+
+    vagrant up 
+    vagrant ssh 
+    vagrant reload 

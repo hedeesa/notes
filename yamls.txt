@@ -1,0 +1,15 @@
+# Dict vs List
+    dict : unordered
+    list: ordered
+
+# example: [{color: blue, model:{name:,year:}}, {color: yellow, model:{name:,year:}}]
+    - color: blue
+      model:
+        name:
+        year:
+    - color: yellow
+      model:
+        name:
+        year:
+
+

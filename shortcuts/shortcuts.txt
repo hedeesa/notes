@@ -1,0 +1,3 @@
+# Run a command on multiple Terminals simultanously?
+  on terminator: topleft icon > Broadcast All
+

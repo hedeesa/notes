@@ -1,0 +1,45 @@
+# release 
+    release is a instance of the chart
+
+# tiller home
+    tiller with its configmaps are on kube-system namespace
+
+# how install tiller 
+    when you download helm2 there are 2 binary files: helm and tiller 
+
+helm uses the same conf of kubectl 
+
+# helm init
+    1- creates local working directory 
+    2- install tiller on cluster
+
+# uninstall tiller from kuber
+    helm reset 
+
+# helm security 
+    tiller is on kube-system by default 
+        so it uses the default service account in the namespace 
+            so it is cluster admin 
+    to solve this:
+        service account + role + rolebinding 
+    
+    helm init --service-account ... --tiller-namespace ...
+
+# tiller locally
+    1- still the configmaps are saved on cluster
+    2- $tiller -- listening on 44134
+    3- helm init --client-only
+    4- export HELM_HOME=/home/me/.helm
+    5- export HELM_HOST=localhost:44134
+
+# delete 
+    helm2 delete --purge 
+    deletes configmaps too
+
+# managing configmaps 
+    managing configmaps can be a hardship so 
+    helm init --history-max 200
+
+# delete completely 
+    serverside -> helm reset 
+    clientside -> rm -rf /home/me/.helm 

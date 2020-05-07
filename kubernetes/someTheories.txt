@@ -1,0 +1,35 @@
+# CRD Custom Resource Definition
+    on kubernetes 1.7 > 
+    enables users to add their own/custom objects to the kubernetes. and use it like any other native kubernetes objects.
+
+# configfile 
+    any user who wants to interact with cluster needs to have a configfile.
+    ```kubeadm init``` creates a configfile under ```/etc/kubernetes/admin.conf```
+    so we copy this file to user directory.
+
+# flannel
+    flannel is a overlay network
+    pods on different nodes can comminucate over this like they are on a same nodes
+    
+# helm
+    helm is kubernetes packet manager
+
+# microk8s vs minikube
+    micro: cluster on your machine
+    minukube: cluster on VM 
+
+# reach pods from outside
+    hostNetwork: true  - for pod
+    hostPort: true - for container
+    loadbalancer:   cloud provider has to be enabled in the configs 
+                    is plain TCP Round-Robin
+                    kubernetes will create a seprate loadbalancer for each service so it is costly 
+    ingress
+
+# loadbalancer vs ingress
+    LB : forwards to kube-proxy then pod
+    ingress: forward to pod 
+
+# multi containers pod 
+    sharing same network stack and storage. so they can connect to each other by localhost
+    

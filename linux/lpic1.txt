@@ -1,0 +1,47 @@
+# systemshell vs user shell
+system shell -> /bin/sh
+user shell -> $SHELL 
+
+# check link
+    readlink
+
+$BASH_VERSION
+
+# uname
+    uname = kernel name
+    uname -r = kernel version 
+    uname -a = all 
+
+# metacharacters 
+    metacharacters: in bash shell there are several characters that have special meaning and functions 
+    shellquoting: allowing you to user metacharacters as regular characters.
+
+    to shellquote 
+        one character: \
+        multichars: ' or "
+
+# go to home dir
+    cd 
+    cd ~
+    cd $HOME
+
+# set vs env=printenv
+
+    set: 
+        1- built-in
+        2- local variables + environment variables + shell functions
+
+    env = printenv:
+        environment variables
+
+# which 
+
+# environment variables vs local variables:
+    local/shell variable: a=1 
+        just for current shell
+    environment variable: export a=1 
+        is for subshells too
+
+PS1 :
+    primary shell commandline interface prompt string 
+

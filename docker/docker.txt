@@ -1,0 +1,2 @@
+# when we are mounting docker socker volume, we cannot use dind
+

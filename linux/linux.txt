@@ -1,0 +1,5 @@
+# watch command
+    watch uses subshells
+
+# terminal browser
+    elinks google.com

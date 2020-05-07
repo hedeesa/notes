@@ -1,0 +1,21 @@
+# get token 
+  kubeadm token create --print-join-command
+
+# status of cluster
+  kubectl cluster-info
+
+# version of kubectl 
+  kubectl version --short
+
+# expose a service
+  kubectl expose deploy ... --port 80 --target-port 80 --type clusterIP 
+
+# enable on microk8s
+  microk8s.enable ... 
+
+# create a pod without yaml 
+  kubectl run nginx --image nginx
+
+# how find out a pod is on which node
+  kubectl describe ... 
+    Node: ... 

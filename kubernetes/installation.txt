@@ -1,0 +1,6 @@
+# microk8s installation
+    snap install microk8s --classic
+
+# 403 on microk8s 
+    you should set proxy on dockerd. microk8s doesnt use docker and it uses its own
+    so go to /var/snap/microk8s/current/args/dockerd-env/ --> add HTTPS_PROXY=... 
